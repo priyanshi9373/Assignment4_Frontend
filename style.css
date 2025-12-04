@@ -1,0 +1,150 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f6f7fb;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.product,
+.cart-item {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.25s;
+}
+
+.product:hover,
+.cart-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+}
+
+
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.product p {
+    color: #555;
+    font-size: 14px;
+}
+
+
+.stock {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px 10px;
+    background: #e7ffe7;
+    color: #1fa01f;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.qty-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0;
+}
+
+.qty-box button {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.qty-num {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+button {
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.back-btn {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cart-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.cart-item h3 {
+    margin: 0;
+}
+
+.cart-item p {
+    margin: 5px 0;
+}
+
+.clear-btn {
+    background: #dc3545;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clear-btn:hover {
+    background: #b52a37;
+}

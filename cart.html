@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Your Cart</h1>
+
+<a href="index.html">
+    <button class="back-btn">← Back to Products</button>
+</a>
+
+<div class="container" id="cart">
+    Loading cart...
+</div>
+
+<button onclick="checkout()" style="margin-top: 20px;">Checkout</button>
+<button onclick="clearCart()" class="clear-btn">Clear Cart</button>
+
+<script src="script.js"></script>
+<script>
+    loadCartPage();
+</script>
+
+</body>
+</html>
