@@ -113,6 +113,7 @@ function checkout() {
     fetch(`${API}/cart/checkout`, { method: "POST" })
         .then(() => {
             alert("Checkout complete! 🚚");
+            clearCart();
             loadCartPage();
         });
 }
